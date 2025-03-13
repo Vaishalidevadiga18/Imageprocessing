@@ -35,6 +35,7 @@ def main():
     
     save_option=input("do you want to save processed images?(yes/no):".strip().lower())
     if save_option=="yes":
+        cv2.imwrite("Original image.jpg",image)
         cv2.imwrite("sobel_edges.jpg",np.uint8(sobel_edges))
         cv2.imwrite('laplacian_edges.jpg',np.uint8(laplacian_edges))
         cv2.imwrite('canny_edges.jpg',canny_edges)
