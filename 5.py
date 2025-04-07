@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-image=cv2.imread(r"D:\ipcv\sahyadri.jpg",cv2.IMREAD_GRAYSCALE)
+image=cv2.imread(r'C:\Users\VAISHALI\Downloads\CV\sahyadri.jpg',cv2.IMREAD_GRAYSCALE)
 
 if image is None:
     raise FileNotFoundError("the image 'ip1.jpg' was not found.")
@@ -29,5 +29,5 @@ for i,img in enumerate(images):
     plt.imshow(img,cmap='gray')
     plt.title(titles[i])
     plt.axis('off')
-    plt.tight_layout()
-    plt.show()
+plt.tight_layout()
+plt.show()
