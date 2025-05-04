@@ -10,6 +10,7 @@ median_blur=cv2.medianBlur(image,5)
 laplacian=cv2.Laplacian(image,cv2.CV_64F)
 laplacian=cv2.convertScaleAbs(laplacian)
 
+
 titles=['Original Image','Gaussain Blur','Median Blur','Laplacian Filter']
 images= [image,gaussian_blur,median_blur,laplacian]
 
